@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 1. **Clone the repository**
-   ``https://github.com/Augustas900/AcademyMovies1.git`
+   https://github.com/Augustas900/AcademyMovies1.git`
 
 
 Build the project
