@@ -20,8 +20,8 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 1. **Clone the repository**
-   ```bash
- https://github.com/Augustas900/AcademyMovies1.git
+   ```bash https://github.com/Augustas900/AcademyMovies1.git
+
 
 Build the project
 
