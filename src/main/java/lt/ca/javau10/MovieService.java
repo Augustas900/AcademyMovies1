@@ -12,10 +12,18 @@ public class MovieService {
     @Autowired
     private MovieRepository repository;
 
+    // Retrieve all movies
     public List<Movie> findAllMovies() {
         return repository.findAll();
     }
+
+    // Retrieve a single movie by its IMDb ID
     public Optional<Movie> findMovieByImdbId(String imdbId) {
         return repository.findMovieByImdbId(imdbId);
+    }
+
+    // Save a new movie
+    public Movie saveMovie(Movie movie) {
+        return repository.save(movie);
     }
 }
