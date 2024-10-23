@@ -16,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Movie {
     @Id
-    private ObjectId id;
+    private ObjectId id; // This can be null when creating a new Movie, as MongoDB will auto-generate it.
     private String imdbId;
     private String title;
     private String releaseDate;
@@ -24,10 +24,13 @@ public class Movie {
     private String poster;
     private List<String> backdrops;
     private List<String> genres;
+    
     @DocumentReference
     private List<Review> reviews;
 
+    // Constructor without ObjectId
     public Movie(String imdbId, String title, String releaseDate, String trailerLink, String poster, List<String> backdrops, List<String> genres) {
+        this.id = new ObjectId(); // Automatically generate a new ObjectId if needed
         this.imdbId = imdbId;
         this.title = title;
         this.releaseDate = releaseDate;

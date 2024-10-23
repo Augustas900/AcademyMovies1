@@ -27,4 +27,3 @@ public class MovieController {
         return new ResponseEntity<Optional<Movie>>(service.findMovieByImdbId(imdbId), HttpStatus.OK);
     }
 }
-
